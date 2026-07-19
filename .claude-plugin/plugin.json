@@ -1,0 +1,6 @@
+{
+  "name": "brain-vault",
+  "version": "1.0.0",
+  "description": "팀 지식볼트(team-brain)를 MCP로 검색·열람해 사전지식으로 활용하는 플러그인",
+  "author": { "name": "inspirit" }
+}

@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "brain-vault": {
+      "type": "http",
+      "url": "https://brain.inspirit-dev.cloud/api/mcp",
+      "headers": { "Authorization": "Bearer ${BRAIN_MCP_TOKEN}" }
+    }
+  }
+}
