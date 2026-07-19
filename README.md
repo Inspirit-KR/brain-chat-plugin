@@ -13,13 +13,21 @@
    /plugin install brain-vault@brain-chat-plugin
    ```
 
-2. 운영자에게 받은 API 키를 셸 설정에 등록 (`~/.zshrc`):
+2. 운영자에게 받은 API 키를 `~/.claude/settings.json`에 등록.
+   파일이 없으면 아래 내용으로 새로 만들고, 이미 있으면 `"env"` 항목만 추가한다:
 
-   ```bash
-   export BRAIN_MCP_TOKEN="받은-키"
+   ```json
+   {
+     "env": { "BRAIN_MCP_TOKEN": "받은-키" }
+   }
    ```
 
-3. 터미널과 Claude Code를 재시작. 새 세션에서 `/mcp`로 brain-vault 연결 확인.
+   직접 고치기 번거로우면 Claude Code에 이렇게 부탁해도 된다:
+   "~/.claude/settings.json의 env에 BRAIN_MCP_TOKEN을 '받은-키' 값으로 추가해줘"
+
+   (다른 방법: 셸 설정 `~/.zshrc`에 `export BRAIN_MCP_TOKEN="받은-키"` 한 줄을 넣어도 동일하게 동작)
+
+3. Claude Code를 재시작. 새 세션에서 `/mcp`로 brain-vault 연결 확인.
 
 이후 팀·프로젝트 관련 질문을 하면 Claude가 알아서 볼트를 검색해 맥락에 활용한다.
 
