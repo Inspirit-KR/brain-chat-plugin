@@ -9,7 +9,7 @@
 1. Claude Code 안에서 플러그인 설치:
 
    ```
-   /plugin marketplace add als8921/brain-chat-plugin
+   /plugin marketplace add Inspirit-KR/brain-chat-plugin
    /plugin install brain-vault@brain-chat-plugin
    ```
 
