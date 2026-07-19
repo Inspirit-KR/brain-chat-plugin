@@ -1,5 +1,6 @@
 {
   "name": "brain-chat-plugin",
+  "description": "인스피릿 팀 지식볼트 연동 플러그인 모음",
   "owner": { "name": "inspirit" },
   "plugins": [
     {
